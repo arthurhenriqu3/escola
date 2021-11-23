@@ -39,6 +39,9 @@ public abstract class Person implements Serializable {
 	protected String lastName;
 	
 	@Column
+	protected String photo;
+	
+	@Column
 	protected Character gender;
 	
 	@Column(nullable = false)
@@ -56,6 +59,7 @@ public abstract class Person implements Serializable {
 		id = null;
 		firstName = null;
 		lastName = null;
+		photo = null;
 		gender = null;
 		birthDate = null;
 	}
